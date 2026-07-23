@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import teaserPhoto from '../assets/janaheroimage.png'
+import teaserPhoto from '../assets/janaheroimage.webp'
 
 function About() {
   return (
@@ -33,6 +33,8 @@ function About() {
           <img
             src={teaserPhoto}
             alt="Jana Saab"
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-contain"
           />
         </div>

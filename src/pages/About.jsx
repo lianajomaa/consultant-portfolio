@@ -1,4 +1,4 @@
-import aboutPhoto from '../assets/janaheroimage.png'
+import aboutPhoto from '../assets/janaheroimage.webp'
 
 function About() {
   const combines = ["Communication", "AI", "Natural Language Processing", "Applied Linguistics", "Research"]
@@ -31,6 +31,8 @@ function About() {
             <img
               src={aboutPhoto}
               alt="Jana Saab"
+              loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>

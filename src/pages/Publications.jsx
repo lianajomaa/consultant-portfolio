@@ -1,6 +1,6 @@
-import scholar from '../assets/pubs/scholar.jpg'
-import researchgate from '../assets/pubs/researchgate.jpg'
-import orcid from '../assets/pubs/orcid.jpg'
+import scholar from '../assets/pubs/scholar.webp'
+import researchgate from '../assets/pubs/researchgate.webp'
+import orcid from '../assets/pubs/orcid.webp'
 
 function Publications() {
   const profiles = [

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import heroPhoto from '../assets/janaaboutimage.png'
+import heroPhoto from '../assets/janaaboutimage.webp'
 
 function Hero() {
   return (
@@ -45,6 +45,8 @@ function Hero() {
           <img
             src={heroPhoto}
             alt="Jana Saab"
+            fetchPriority="high"
+            decoding="async"
             className="h-full w-full object-contain"
           />
         </div>
