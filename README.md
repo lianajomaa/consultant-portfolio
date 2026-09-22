@@ -1,16 +1,63 @@
-# React + Vite
+# Consultant Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A nine-page portfolio website built for a PhD researcher and AI communication consultant, delivered as a paid client project.
 
-Currently, two official plugins are available:
+**Live site:** https://jana-website-roan.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+The client needed a professional web presence that presents research, services and speaking work to an academic and corporate audience — something to send people to instead of a PDF CV. The site was designed and built from scratch: structure, layout, content flow and deployment. It is now in a second phase of work.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Nine responsive pages covering profile, research, services, media and contact
+- Mobile navigation menu with animated open and close transitions
+- Interactive accordions for dense research and service content
+- Image carousels for media and event galleries
+- Contact form with email delivery via Formspree, routed straight to the client's inbox
+- Deployed on Vercel with a custom domain and automatic redeploys on every push
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+| Layer | Tools |
+| --- | --- |
+| Framework | React 18 |
+| Build | Vite |
+| Routing | React Router |
+| Styling | Tailwind CSS |
+| Forms | Formspree |
+| Hosting | Vercel |
+
+## Delivery notes
+
+- 40+ client-supplied images optimised before deployment to keep page weight low on mobile connections
+- Continuous deployment from `main`, so content changes requested by the client go live within minutes
+- Built and handed over as a live client engagement, not a demo
+
+## Running locally
+
+```bash
+git clone https://github.com/lianajomaa/consultant-portfolio.git
+cd consultant-portfolio
+npm install
+npm run dev
+```
+
+The dev server runs on `http://localhost:5173`.
+
+```bash
+npm run build     # production build
+npm run preview   # preview the production build locally
+```
+
+## Roadmap — phase two (in progress)
+
+Extending the site from a static brochure into a tutorial platform:
+
+- User accounts and authentication
+- Structured lesson content with progress tracking
+- Moving from static pages to a database-backed backend
+
+## Contact
+
+Built by **Liana Zouher Jomaa** — [GitHub](https://github.com/lianajomaa) · lianajomaa95@gmail.com
