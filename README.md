@@ -2,7 +2,7 @@
 
 A nine-page portfolio website built for a PhD researcher and AI communication consultant, delivered as a paid client project.
 
-**Live site:** https://jana-website-roan.vercel.app
+**Live site:** https://janasaab.vercel.app
 
 ## Overview
 
