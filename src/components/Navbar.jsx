@@ -46,6 +46,15 @@ function Navbar() {
               )
             })}
           </ul>
+
+          {/* entry point into the learning platform */}
+          <Link
+            to="/learn"
+            className="border-b-2 border-baby pb-1 text-sm font-medium text-navy transition hover:border-navy"
+          >
+            Courses
+          </Link>
+
           <Link to="/contact" className="rounded-md bg-navy px-4 py-2 text-sm font-medium text-white">
             Contact
           </Link>
@@ -82,6 +91,15 @@ function Navbar() {
                 </li>
               )
             })}
+            <li>
+              <Link
+                to="/learn"
+                onClick={() => setOpen(false)}
+                className="block py-2.5 text-sm font-medium text-navy"
+              >
+                Courses
+              </Link>
+            </li>
             <li>
               <Link
                 to="/contact"
