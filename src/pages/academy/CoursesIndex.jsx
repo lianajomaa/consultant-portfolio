@@ -1,5 +1,13 @@
+/**
+ * ALL COURSES  —  /courses
+ *
+ * Lists the courses grouped by audience, then shows the subscription
+ * packages underneath.
+ */
+
 import { courses, paths } from '../../data/courses'
 import CourseCard from '../../components/academy/CourseCard'
+import PricingSection from '../../components/academy/PricingSection'
 
 function CoursesIndex() {
   return (
@@ -48,6 +56,8 @@ function CoursesIndex() {
           </section>
         )
       })}
+
+      <PricingSection />
     </>
   )
 }

@@ -25,6 +25,7 @@ import ExercisePage from './pages/academy/ExercisePage'
 import AssessmentPage from './pages/academy/AssessmentPage'
 import Dashboard from './pages/academy/Dashboard'
 import CertificatePage from './pages/academy/CertificatePage'
+import Checkout from './pages/academy/Checkout'
 
 /**
  * Two layouts, because the two halves of the site have different chrome.
@@ -77,6 +78,7 @@ function App() {
 
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/certificate/:slug" element={<CertificatePage />} />
+        <Route path="/checkout/:planId" element={<Checkout />} />
       </Route>
     </Routes>
   )
