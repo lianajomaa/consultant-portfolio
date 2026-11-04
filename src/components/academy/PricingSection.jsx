@@ -11,7 +11,7 @@
 
 import { Link } from 'react-router-dom'
 import { Check, X } from 'lucide-react'
-import { plans, currency } from '../../data/plans'
+import { plans, currency, institutions } from '../../data/plans'
 
 function PlanCard({ plan }) {
   const isFree = plan.price === 0
@@ -129,6 +129,37 @@ function PricingSection() {
           {plans.map((plan) => (
             <PlanCard key={plan.id} plan={plan} />
           ))}
+        </div>
+
+        {/* B2B — quoted, not bought off the page, so it isn't a priced card */}
+        <div className="mt-8 flex flex-col gap-6 rounded-2xl border border-navy/15 bg-white p-7 md:flex-row md:items-center md:justify-between md:p-8">
+          <div className="max-w-xl">
+            <h3 className="font-serif text-xl font-medium text-navy md:text-2xl">
+              {institutions.title}
+            </h3>
+            <p className="mt-2 text-[13px] leading-relaxed text-navy/75 md:text-sm">
+              {institutions.description}
+            </p>
+
+            <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+              {institutions.features.map((feature) => (
+                <li
+                  key={feature}
+                  className="flex items-center gap-1.5 text-[12px] text-navy/70"
+                >
+                  <Check size={13} className="flex-shrink-0 text-navy" aria-hidden="true" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <Link
+            to="/contact"
+            className="flex-shrink-0 rounded-lg bg-navy px-6 py-3 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-[#1B3D5C]"
+          >
+            {institutions.cta}
+          </Link>
         </div>
       </div>
     </section>
